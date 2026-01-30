@@ -1,0 +1,21 @@
+{
+  "name": "elite-flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aka1976mb/elite-flow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aka1976mb/elite-flow/issues"
+  },
+  "homepage": "https://github.com/aka1976mb/elite-flow#readme"
+}
