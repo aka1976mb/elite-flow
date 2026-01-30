@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/aka1976mb/elite-flow/issues"
   },
-  "homepage": "https://github.com/aka1976mb/elite-flow#readme"
+  "homepage": "https://github.com/aka1976mb/elite-flow#readme",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  }
 }

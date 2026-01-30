@@ -1,0 +1,14 @@
+name: Docs
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build Documentation
+        run: |
+          mkdir docs
+          # Auto-generate API docs
+          # Build workflow examples
