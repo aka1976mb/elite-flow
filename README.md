@@ -25,15 +25,12 @@ An AI-powered workflow brainstorming and automation tool.
 
 ## Introduction
 
-Elite-Flow is an innovative AI-powered tool designed to revolutionize how teams and individuals conceptualize, optimize, and automate their workflows. Leveraging advanced AI models, Elite-Flow assists in generating novel workflow ideas, identifying optimization opportunities in existing processes, and suggesting automations for repetitive tasks.
+Elite-Flow is an AI-powered tool to revolutionize workflow conceptualization, optimization, and automation. It leverages advanced AI models to generate novel workflow ideas, identify optimization opportunities, and suggest automations for repetitive tasks.
 
 ## Features
 
-- **AI Brainstorming Engine:** Generate workflow ideas and patterns using integrated Large Language Models (LLMs).
-- **Workflow Optimization:** AI-driven suggestions to enhance efficiency and effectiveness of existing workflows.
-- **Automation Suggestions:** Automatically identify and propose automation opportunities based on task descriptions.
-- **(Planned) Visual Workflow Builder:** Intuitive drag-and-drop interface for designing and visualizing workflows.
-- **(Planned) Integration Hub:** Generate GitHub Actions, CI/CD pipeline suggestions, and API workflow definitions.
+- **AI Brainstorming Engine:** Generates workflow ideas and patterns using integrated Large Language Models (LLMs), offers AI-driven optimization, and suggests automation opportunities.
+- **Future Enhancements:** Planned features include an intuitive Visual Workflow Builder and an Integration Hub for generating GitHub Actions, CI/CD suggestions, and API workflow definitions.
 
 ## Getting Started
 
@@ -42,7 +39,7 @@ Follow these instructions to set up Elite-Flow for development or local use.
 ### Prerequisites
 
 - Git
-- Python 3.8+
+- Python 3.10+
 - Node.js (for `package.json` utilities, if any are added in the future)
 - GitHub CLI (`gh`) - for repository management and interaction.
 
@@ -67,9 +64,31 @@ Follow these instructions to set up Elite-Flow for development or local use.
     ```
     *(Note: Currently, there are no specific Node.js dependencies, but `package.json` is initialized.)*
 
-### Quick Start
+### Usage
 
-*(This section will contain examples of how to run the Elite-Flow application once functional features are implemented.)*
+Here's how to use the core `BrainstormingEngine` to start generating workflow ideas:
+
+```python
+from src.core.brainstorming_engine import BrainstormingEngine
+
+# Instantiate the engine
+engine = BrainstormingEngine()
+
+# Generate workflow ideas
+problem = "Automate customer support email responses"
+ideas = engine.generate_workflow_ideas(problem)
+print(f"Workflow ideas for '{problem}': {ideas}")
+
+# Optimize an existing workflow (placeholder)
+existing_workflow = "Current manual email response process"
+optimized_flow = engine.optimize_workflow(existing_workflow)
+print(f"Optimized workflow for '{existing_workflow}': {optimized_flow}")
+
+# Suggest automations (placeholder)
+task = "Categorize incoming customer emails"
+automations = engine.suggest_automations(task)
+print(f"Automation suggestions for '{task}': {automations}")
+```
 
 ## Project Structure
 
