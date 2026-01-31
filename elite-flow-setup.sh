@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # elite-flow-setup.sh
 
 echo "Setting up Elite-Flow..."
